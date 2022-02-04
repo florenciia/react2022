@@ -1,23 +1,32 @@
-.navbar{
-    background-color: grey;
+.title{
+  font-size: 1.8rem;
+  text-decoration: transparent;
+  color: #ffffff;
+  padding: 5px;
 }
-  
-  .inputt{
-    color: white;
-    background-color: black;
-    border: 2px solid orange;
-  }
-  .Btn{
-    color: white;
-    background-color: black;
-    border: 2px solid orange;
-  }
-  a{
-    margin-left: 20px;
-    font-size: 1.5rem;
-  }
-  .title{
-    font-size: 2rem;
-    text-decoration: transparent;
-    color: #000000;
-  }
+.navbar .navi{
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.navbar .navi:hover{
+    border: 1px solid #CAF0F8;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.btn-tog{
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: #CAF0F8;
+  width: 50px;
+  height: 50px;
+}
+
+.dropdown ul{
+  background-color: #03045E;
+  border: 1px solid #CAF0F8;
+}
+.dropdown a{
+  color: #ffffff;
+}

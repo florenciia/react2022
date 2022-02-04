@@ -7,10 +7,6 @@ function App() {
           <div className="App">
             
             <Navbar />
-
-            <br/>
-            <h1> RED DE AUXILIARES</h1>
-            <h1> DIPLOMATURA EN:</h1>
                   
           </div>
   );

@@ -1,37 +1,39 @@
-import React from "react";
+import React, { Fragment } from "react";
 import './CartWidget.css';
-import { Button, Card, Image } from 'semantic-ui-react';
 
 
-function CartWidget(title, price, description,img){
+const CartWidget = ({image, title1, title2, title3}) => {
     return(
-        <div>
+        <Fragment>
 
-            <h1>Lista de cursos</h1>
-
+          <div className="card-group">
             <div className="card">
-            <Card>
-                <Card.Content>
-                  <Image>{img}</Image>
-                  <Card.Header>{title}</Card.Header>
-                  <Card.Meta>{price}</Card.Meta>
-                  <Card.Description>{description}</Card.Description>
-                </Card.Content>
-
-                <Card.Content extra>
-                  <div className='ui two buttons'>
-                    <Button basic color='green'>
-                      +
-                    </Button>
-                    <Button basic color='red'>
-                      -
-                    </Button>
-                  </div>
-                </Card.Content>
-              </Card>
+              <div className="card-body">
+                <h5 className="card-title"> {title1} </h5>
+                <img src={image} className="card-img-top" alt="..."/>
+                {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
+              </div>
             </div>
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title"> {title2} </h5>
+                <img src={image} className="card-img-top" alt="..."/>
+                {/* <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title"> {title3} </h5>
+                <img src={image} className="card-img-top" alt="..."/>
+                {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
+              </div>
+            </div>
+          </div>
           
-        </div>
+        </Fragment>
     );
 }
 
