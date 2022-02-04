@@ -1,0 +1,23 @@
+.navbar{
+    background-color: grey;
+}
+  
+  .inputt{
+    color: white;
+    background-color: black;
+    border: 2px solid orange;
+  }
+  .Btn{
+    color: white;
+    background-color: black;
+    border: 2px solid orange;
+  }
+  a{
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+  .title{
+    font-size: 2rem;
+    text-decoration: transparent;
+    color: #000000;
+  }
