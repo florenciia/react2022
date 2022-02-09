@@ -1,0 +1,16 @@
+.carrito{
+    background-color: black;
+    border: 2px solid cadetblue;
+    color: #ffffff;
+    width: 20rem;
+    height: 13rem;
+    margin: 1rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+.btnn{
+    background-color: cadetblue;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+}
