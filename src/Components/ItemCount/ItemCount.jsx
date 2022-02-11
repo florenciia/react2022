@@ -21,6 +21,8 @@ function ItemCount() {
          }
          
     }
+    
+
     // useEffect(() => {
     //     setTimeout(()=>{
     //         console.log('Se ejecuta el useEffect')
@@ -31,10 +33,11 @@ function ItemCount() {
     return(
         <div className="carrito">
             <h1>Add items</h1>
-
             <h1>{count}</h1>
             <button className="btnn" onClick={aumentar}> + </button>
             <button className="btnn" onClick={disminuir}> - </button>
+            <br/>
+            <button className="btn-add"> Agregar productos</button>
         </div>
     )
 

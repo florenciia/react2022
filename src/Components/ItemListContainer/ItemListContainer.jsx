@@ -1,9 +1,17 @@
 import React from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import ItemList from "../ItemList/ItemList";
 
 function ItemListContainer(){
     return(
-        <ItemCount />
+        <div>
+
+            <ItemList />
+
+            <ItemCount />
+            
+        </div>
+        
     )
 }
 export default ItemListContainer;

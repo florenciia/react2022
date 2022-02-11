@@ -2,15 +2,21 @@
     background-color: black;
     border: 2px solid cadetblue;
     color: #ffffff;
-    width: 20rem;
-    height: 13rem;
+    width: 12rem;
+    height: 12rem;
     margin: 1rem;
     padding: 1rem;
     margin-bottom: 5rem;
 }
+.carrito h1{
+    font-size: 1.5rem;
+}
 .btnn{
     background-color: cadetblue;
-    width: 3rem;
-    height: 3rem;
-    margin: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.5rem;
+}
+.btn-add{
+    background-color: cadetblue;
 }

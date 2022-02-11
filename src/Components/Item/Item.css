@@ -1,0 +1,12 @@
+.cargando {
+    padding: 2rem;
+    background-color: white;
+    width: 100%;
+    margin: 1rem;
+}
+
+.muestraServicio{
+    background-color: turquoise;
+    margin: 1rem;
+    padding: 2rem;
+}
