@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 import ItemList from "../ItemList/ItemList";
 import { traerServicios } from '../ListaServicios';
 
@@ -30,7 +31,9 @@ function ItemListContainer(){
                 </>
             )}      
 
-            <ItemCount />      
+            <ItemCount />    
+
+            <ItemDetailContainer />  
         </div>       
         
     )

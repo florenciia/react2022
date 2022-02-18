@@ -21,14 +21,6 @@ function ItemCount() {
          }
          
     }
-    
-
-    // useEffect(() => {
-    //     setTimeout(()=>{
-    //         console.log('Se ejecuta el useEffect')
-    //     }, 2000);
-    // }, []
-    // )
 
     return(
         <div className="carrito">
