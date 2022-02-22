@@ -2,32 +2,39 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './Components/NavBar/NavBar';
-import {ItemDetailContainer} from './Components/ItemDetailContainer/ItemDetailContainer';
-import Home from './Components/Homee/Home';
-
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 function App() {
   
   return (
-          <div className="App container-fluid ">
 
-            <BrowserRouter>
+    <>
+     
+     
+     <div className="App container-fluid ">
+     
+       <BrowserRouter>
+         <Navbar />
+           <Routes>
 
-              <Navbar />
+           <Route path="/" element={ <ItemListContainer /> }  />
 
-                <Routes>
-                {/* inicio */}
-                  <Route path="/home" element={ <Home/> }  />
-                  {/* personaje */}
-                  <Route path="/category/:id" element={<ItemDetailContainer/> }  />
-                </Routes>
+           <Route path="/category/:id" element={ <ItemListContainer /> }  />
 
-                <footer>
-                  sitio desarrollado por...
-                </footer>
+           <Route path="/item/:id" element={ <ItemDetailContainer /> }  />
 
-            </BrowserRouter>         
-                  
-          </div>
+             
+           </Routes>
+           <footer>
+             sitio desarrollado por...
+           </footer>
+       </BrowserRouter>         
+        
+     </div>
+
+    </>
+    
+           
   );
 }
 

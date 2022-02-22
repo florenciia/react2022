@@ -1,65 +1,43 @@
-// import React, {useEffect, useState} from 'react';
-// import axios from 'axios';
-// import '../ListaServicios';
-// import { traerServicios } from '../ListaServicios';
-// import ItemDetail from '../ItemDetail/ItemDetail';
-// import {Link} from 'react-router-dom';
+// import React from 'react';
+// 
+
 
 // const ItemDetailContainer = () => {
-
-//     const [producto, setProducto] = useState([]);
-//     const [loading, setLoading] = useState(true);
-
-//     useEffect(() => {
-//         traerServicios.then(resultado =>{
-//             setProducto(resultado);
-//         })
-//         .finally(()=>{
-//             setLoading(false);
-//         });
-//         }, [producto]
-//     )
-
-//   return (
-//     <div>
-//     {loading ? (
-//         <h1>cargando producto</h1>
-//     ) : (
-//         <>
-
-//         <ItemDetail producto={producto} id="1" servicio="algo" precio="$25" descripcion="Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum"/>
-//         </>
-//     )}
-
-//     <Link to={`/item/${producto.id}`}> 
+//     const {id} = useParams();
+    
+//     console.log(id)
+    
+//     return(
 //         <div>
-//             {producto.name}
+        
+
 //         </div>
-//     </Link>
-       
-//     </div>
-//   )
+//     );
 // }
+
+
+
 // export default ItemDetailContainer;
 
+import React from "react";
+import { useParams } from "react-router";
+import { traerServicios } from './ListaServicios';
 
+function ItemDetailContainer(){
 
-import axios from 'axios';
+    const {id} = useParams();
+    console.log(id)
+    console.log(traerServicios)
+    console.log(traerServicios[id])
 
-// todoslospersonajes
-
-const ItemDetailContainer = async (state) => {
-
-    const peticion = await axios.get('https://rickandmortyapi.com/api/character');
-    state('peticion' , peticion.data.results)
+    return(
+        <div>
+             <p>{traerServicios[id].id}</p>
+             <h1>{traerServicios[id].servicio}</h1>
+             <p>{traerServicios[id].precio}</p>
+             <p>{traerServicios[id].descripcion}</p>
+        </div>       
+        
+    )
 }
-
-const itemDetail2 = async (id,state) => {
-    const peticion2 = await axios.get(`https://rickandmortyapi.com/api/character/${id}`);
-    state('peticion2' , peticion2.data)
-}
-
-export{
-    ItemDetailContainer,
-    itemDetail2
-}
+export default ItemDetailContainer;

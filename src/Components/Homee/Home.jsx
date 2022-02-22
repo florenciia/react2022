@@ -10,6 +10,9 @@ const Home = () => {
     ItemDetailContainer(setPersonajes)
   }, [])
 
+  console.log(ItemDetailContainer);
+  
+
   return (
     <div className='home'>
     
@@ -20,6 +23,8 @@ const Home = () => {
             </div>
           ))
           ) : ('no hay personajes') }
+
+
 
     </div>
   )

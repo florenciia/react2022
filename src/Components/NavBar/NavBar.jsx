@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import CartWidget from "../CartWidget/CartWidget";
+// import CartWidget from "../CartWidget/CartWidget";
 import './NavBar.css';
 import {Link} from 'react-router-dom';
 
@@ -18,7 +18,7 @@ function Navbar() {
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
                                     {/* <a className="nav-link active navi" aria-current="page" href="#">INICIO</a> */}
-                                    <Link className="nav-link active navi" to="/">INICIO</Link>
+                                    <Link className="nav-link active navi" to="/home">INICIO</Link>
                                 </li>
                                 <li className="nav-item">
                                     {/* <a className="nav-link active navi" href="#">BIOGRAFÍA</a> */}
@@ -46,11 +46,11 @@ function Navbar() {
                 </div>
             </nav>
 
-            <CartWidget title1="Profesional 1"
+            {/* <CartWidget title1="Profesional 1"
                         title2="Profesional 2"
                         title3="Profesional 3"
                         image="../perfil.jpeg"
-            />
+            /> */}
 
 
         </Fragment>
