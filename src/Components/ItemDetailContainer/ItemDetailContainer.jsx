@@ -13,7 +13,7 @@ function ItemDetailContainer(){
     console.log(traerServicioDetalle);
 
     useEffect(() => {
-        serviciosGeneral.then((res) =>{
+        traerServicios.then((res) =>{
             setServiios(res);
         })
         .catch((error) =>{

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-// import ItemCount from "../ItemCount/ItemCount";
+
 import ItemList from "../ItemList/ItemList";
 import { traerServicios } from '../ItemDetailContainer/ListaServicios';
 
@@ -10,7 +10,6 @@ function ItemListContainer(){
 
     useEffect(() => {
     traerServicios.then(resultado => {
-        // console.log('resultado', resultado);
         setServicios(resultado);
     })
     .finally(() => {
@@ -28,9 +27,7 @@ function ItemListContainer(){
                     <>
                         <ItemList servicios={servicios} />
                     </>
-                )}      
-
-                {/* <ItemCount />     */}
+                )} 
 
             </div>  
     )

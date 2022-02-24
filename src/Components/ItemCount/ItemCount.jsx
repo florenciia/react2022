@@ -24,7 +24,7 @@ function ItemCount() {
 
     return(
         <div className="count">
-            <h1>Add items</h1>
+            <h1> Cantidad de servicios que desea</h1>
             <h1>{count}</h1>
             <button className="btnn" onClick={aumentar}> + </button>
             <button className="btnn" onClick={disminuir}> - </button>

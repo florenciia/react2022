@@ -2,15 +2,12 @@
     background-color: black;
     border: 2px solid cadetblue;
     color: #ffffff;
-    width: 15rem;
-    height: 15rem;
-    margin: 1rem;
+    width: 25rem;
+    height: auto;
     padding: 1rem;
-    margin-bottom: 5rem;
-    margin-left: 30%;
 }
 .count h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .btnn{
     background-color: cadetblue;

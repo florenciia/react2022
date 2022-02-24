@@ -9,4 +9,20 @@
     background-color: turquoise;
     margin: 1rem;
     padding: 2rem;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.fondo{
+    background-color: skyblue;
+    padding: 1rem;
+}
+.hr{
+    background-color: black;
+    border: 5px solid black;
+    width: 100%;
 }

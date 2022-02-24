@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-// import CartWidget from "../CartWidget/CartWidget";
 import './NavBar.css';
 import {Link} from 'react-router-dom';
 
@@ -45,13 +44,6 @@ function Navbar() {
                         </div>
                 </div>
             </nav>
-
-            {/* <CartWidget title1="Profesional 1"
-                        title2="Profesional 2"
-                        title3="Profesional 3"
-                        image="../perfil.jpeg"
-            /> */}
-
 
         </Fragment>
     )
