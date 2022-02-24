@@ -1,22 +1,25 @@
-.carrito{
+.count{
     background-color: black;
     border: 2px solid cadetblue;
     color: #ffffff;
-    width: 12rem;
-    height: 12rem;
+    width: 15rem;
+    height: 15rem;
     margin: 1rem;
     padding: 1rem;
     margin-bottom: 5rem;
+    margin-left: 30%;
 }
-.carrito h1{
-    font-size: 1.5rem;
+.count h1{
+    font-size: 2rem;
 }
 .btnn{
     background-color: cadetblue;
-    width: 2.5rem;
-    height: 2.5rem;
+    font-size: 1.5rem;
+    width: 3rem;
+    height: 3rem;
     margin: 0.5rem;
 }
 .btn-add{
     background-color: cadetblue;
+    font-size: 1rem;
 }

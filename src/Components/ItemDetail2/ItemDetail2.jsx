@@ -1,32 +1,24 @@
 import React from 'react';
-import ItemCount from '../ItemCount/ItemCount';
-import { Link } from 'react-router-dom';
+import './ItemDetail2.css';
 
+// import ItemCount from '../ItemCount/ItemCount';
 
-const Item = async({servicioss}) => {
+const ItemDetail2 = ({id,servicio,precio,descripcion}) => {
 
   return (
             <div>
-
-                {servicioss.map((serv) =>
-                    <div className='muestraServicio' key={serv.id}>
-                        <p> {serv.id} </p>
-                        <h1> {serv.servicio} </h1>
-                        <p> Precio: {serv.precio} </p>
-                        <p> Sobre el servicio: {serv.descripcion} </p>
-
-                        <Link to={`ItemDetailContainer/${serv.id}`}>
-                            <button>DETALLES</button>
-                        </Link>
-
-                        <ItemCount />
+                    <div className='muestraServicio'>
+                        <p> {id} </p>
+                        <h1> {servicio} </h1>
+                        <p> Precio: {precio} </p>
+                        <p> Sobre el servicio: {descripcion} </p>
+                        
+                        {/* <ItemCount /> */}
                     </div>
-                    )
-                }
             </div>
     )
 }          
-export default Item;
+export default ItemDetail2;
 
 /* item detail container --> item list container
 item detail --> item

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {ItemDetailContainer} from '../ItemDetailContainer/ItemDetailContainer'
+import {ItemDetailContainer} from './ItemDetailContainer/ItemDetailContainer'
 import './Home.css';
 import { Link } from 'react-router-dom';
 

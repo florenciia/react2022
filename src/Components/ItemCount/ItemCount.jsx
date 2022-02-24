@@ -23,7 +23,7 @@ function ItemCount() {
     }
 
     return(
-        <div className="carrito">
+        <div className="count">
             <h1>Add items</h1>
             <h1>{count}</h1>
             <button className="btnn" onClick={aumentar}> + </button>

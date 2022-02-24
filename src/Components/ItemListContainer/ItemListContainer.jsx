@@ -20,20 +20,19 @@ function ItemListContainer(){
     )
 
     return(
-        <div>
-             {loading ? (
-                <h1>Cargando servicios</h1>
-            ) : (
-                <>
-                    <ItemList servicios={servicios} />
-                </>
-            )}      
-
-            {/* <ItemCount />     */}
-
-          
-        </div>       
         
+            <div>
+                {loading ? (
+                    <h1>Cargando servicios</h1>
+                ) : (
+                    <>
+                        <ItemList servicios={servicios} />
+                    </>
+                )}      
+
+                {/* <ItemCount />     */}
+
+            </div>  
     )
 }
 export default ItemListContainer;
