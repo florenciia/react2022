@@ -9,7 +9,7 @@ function ItemCount() {
             setCount(count + 1);    
         } 
         else{
-            alert('No more things')
+            alert('Límite de solicitud')
         }
     }
      const disminuir = () => {
@@ -17,15 +17,15 @@ function ItemCount() {
             setCount(count - 1);
          }
          else{
-             alert('Add something')
+             alert('Agregar proctudo')
          }
          
     }
 
     return(
         <div className="count">
-            <h1> Cantidad de servicios que desea</h1>
-            <h1>{count}</h1>
+            <h1 className="countTitle"> Cantidad de servicios que desea</h1>
+            <h1 className="countN">{count}</h1>
             <button className="btnn" onClick={aumentar}> + </button>
             <button className="btnn" onClick={disminuir}> - </button>
             <br/>

@@ -4,8 +4,9 @@ import Item from '../Item/Item';
 const ItemList = ({servicios}) => {
   return (
         <div className='cadaProducto'>
-          {servicios.map((servicioNuevo) => (
-                <Item {...servicioNuevo} key={servicioNuevo.id} />
+        
+          {servicios.map((servicioElegido) => (
+            <Item {...servicioElegido} key={servicioElegido.id} />                
             )
           )} 
               

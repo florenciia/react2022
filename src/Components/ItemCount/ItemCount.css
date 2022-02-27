@@ -1,22 +1,56 @@
+/* @media (max-width: 768px) {
+    .count{
+        background-color: black;
+        border: 2px solid turquoise;
+        color: #ffffff;
+        width: 17rem;
+        height: auto;
+        padding: 0.5rem;
+        margin-top: 1rem;
+    }
+    .count h1{
+        font-size: 1rem;
+    }
+    .btnn{
+        background-color: turquoise;
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+        margin: 0.5rem;
+    }
+    .btn-add{
+        background-color: turquoise;
+        font-size: 1rem;
+    }
+} */
+
+
+
 .count{
     background-color: black;
-    border: 2px solid cadetblue;
+    border: 2px solid turquoise;
     color: #ffffff;
-    width: 25rem;
-    height: auto;
-    padding: 1rem;
+    width: 30rem;
+    height: 15rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
 }
-.count h1{
+.countN{
+    font-size: 2.5rem;
+}
+.countTitle{
     font-size: 1.5rem;
+    margin-top: 1rem;
 }
 .btnn{
-    background-color: cadetblue;
-    font-size: 1.5rem;
+    background-color: turquoise;
+    font-size: 1rem;
     width: 3rem;
     height: 3rem;
     margin: 0.5rem;
 }
 .btn-add{
-    background-color: cadetblue;
+    background-color: turquoise;
     font-size: 1rem;
 }

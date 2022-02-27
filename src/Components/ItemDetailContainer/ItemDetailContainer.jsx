@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 import { traerServicios, serviciosGeneral, ListaServicios } from "./ListaServicios";
 
 function ItemDetailContainer(){
-    const [servicios, setServiios] = useState([]);
+    const [servicios, setServicios] = useState([]);
     const [cargando, setCargando] = useState(true);
     const {id} = useParams();
     console.log(id);
@@ -14,7 +14,7 @@ function ItemDetailContainer(){
 
     useEffect(() => {
         traerServicios.then((res) =>{
-            setServiios(res);
+            setServicios(res);
         })
         .catch((error) =>{
             console.log(error);
@@ -22,24 +22,22 @@ function ItemDetailContainer(){
         .finally(() =>{
             setCargando(false);
         })
-    })
+    },[])
 
     return(
     
             <div>
-                {cargando ? ( <h1> Cargando Servicios...</h1>)
+                {cargando ? ( <h1> Cargando...</h1>)
                     :
-                (
-                    <>
+                    (
+                        <>
 
-                    {traerServicioDetalle.map((servicioElegido)=>(
-                        
-                    <ItemDetail2 {...servicioElegido} key={servicioElegido.id}/>
-                    ))}
+                        {traerServicioDetalle.map((servicioElegido)=>(
+                            <ItemDetail2 {...servicioElegido} key={servicioElegido.id}/>
+                        ))}
 
-                    </>
-                )
-                }
+                        </>
+                    )}
             </div>
         
     )
