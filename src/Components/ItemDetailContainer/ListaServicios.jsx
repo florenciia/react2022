@@ -1,3 +1,4 @@
+
 export const serviciosGeneral = [
     {   id:1,
         titulo:'Bursatil',
@@ -24,27 +25,27 @@ export const serviciosGeneral = [
         titulo: 'Inversión en acciones',
         precio: '$35',
         descripcion: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        tipo: 'curso',
+        tipo: 'curso',        
     },
     {
         id: 5,
         titulo: 'Inversión indexada',
         precio: '$35',
         descripcion: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        tipo: 'curso',
+        tipo: 'curso',        
     },
     {
         id: 6,titulo: 'Cobertura cambiaria con futuros de dolar',
         precio: '$35',
         descripcion: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        tipo: 'curso',
+        tipo: 'curso',        
     },
     {
         id: 7,
         titulo: 'Trading intradiario en la bolsa de Nueva York',
         precio: '$35',
         descripcion: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-        tipo: 'curso',
+        tipo: 'curso',        
     },
     {
         id: 8,

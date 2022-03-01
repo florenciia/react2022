@@ -2,25 +2,30 @@ import React, {useState, useEffect} from "react";
 import ItemList from "../ItemList/ItemList";
 import { traerServicios } from '../ItemDetailContainer/ListaServicios';
 import './ItemListContainer.css';
+import { useParams } from "react-router-dom";
 
 function ItemListContainer({bienvenida}){
 
     const [servicios, setServicios] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    const asesoramiento = servicios.filter(servicioElegido => servicioElegido.tipo =='asesoramiento');
-    const curso = servicios.filter(servicioElegido => servicioElegido.tipo =='curso');
-    const producto = servicios.filter(servicioElegido => servicioElegido.tipo =='producto');
+    const {tipo} = useParams();
 
 
     useEffect(() => {
     traerServicios.then(resultado => {
-        setServicios(resultado);
+        if(tipo){
+            let servicioss = resultado.filter(elemento => elemento.tipo === tipo);
+            setServicios(servicioss);
+        } else {
+            setServicios(resultado);
+        }
+        
     })
     .finally(() => {
         setLoading(false);
     });
-    }, []);
+    }, [ tipo ]);
 
     return(
         
@@ -29,11 +34,7 @@ function ItemListContainer({bienvenida}){
                     <h1 className="inicio">{bienvenida="ASESORAMIENTO FINANCIERO"}</h1>
                 ) : (
                     <>  
-                        <h1>Todos los servicios</h1>
-                        
-                        <ItemList servicios={asesoramiento} />
-                        <ItemList servicios={curso} />
-                        <ItemList servicios={producto} />
+                        <ItemList servicios={servicios} />
                     </>
                 )} 
 

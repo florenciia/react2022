@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ItemDetail2 from "../ItemDetail2/ItemDetail2";
 import { useParams } from "react-router";
-import { traerServicios, serviciosGeneral, ListaServicios } from "./ListaServicios";
+import { traerServicios, serviciosGeneral, ListaServicios } from "../ItemDetailContainer/ListaServicios";
 
 function ItemDetailContainer(){
     const [servicios, setServicios] = useState([]);
