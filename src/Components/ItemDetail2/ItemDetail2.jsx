@@ -1,18 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './ItemDetail2.css';
 import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount/ItemCount';
-// import Count from '../ItemCount/count';
+
 
 const ItemDetail2 = ({titulo,precio,descripcion}) => {
 
-    // const [count, setCount] = useState('');
-    // const [count, setCount] = useState(0);
+    const [cart, setCart] = useState(0);
 
-    // const handleTitleParent = (texto) => {
-    //     console.log('texto', texto)
-    //     setCount('texto', texto)
-    // }
+    const agregarAlCarrito = (e) => {
+        setCart(e);
+    }
+
+    const mostrar = () => {
+        console.log('guardo datos', cart);
+    }
+
+    mostrar();
 
     return (
         <div className='muestraServicio'>
@@ -20,10 +24,14 @@ const ItemDetail2 = ({titulo,precio,descripcion}) => {
             <p className='precio'> Precio: {precio} </p>
             <p className='descrip'> Sobre el servicio: {descripcion} </p>
             
-            <ItemCount />
-
-                {/* <ItemCount handleNuevoTitulo={(texto) => handleTitleParent(texto)}/>     */}
-                {/* <Count tituloProp={count}/> */}
+            {   cart === 0 ? <ItemCount onAdd={(e) => agregarAlCarrito(e)}/> 
+                    :
+                <>  <Link to={`/carritoFinal`}> 
+                        <button className='btn-add-final'> Finlizar Compra</button> 
+                    </Link>
+                </>
+            }
+            <br/>
 
             <Link to={`/`}>
                 <button className='volver'> Todos los servicios </button>

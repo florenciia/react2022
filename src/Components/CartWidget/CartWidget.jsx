@@ -13,7 +13,7 @@ const CartWidget=()=>{
                 <img className = "imgCarrito" src={carrito} alt="img"/>
             </li>
             <li>
-                <h3 className="nroItem">0</h3>
+                <h3 className="nroItem">-</h3>
             </li>
             </ul>
             
